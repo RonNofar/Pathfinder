@@ -8,6 +8,17 @@
 
 using std::chrono::system_clock;
 
+class Vertex { // to be taken out
+	float distance;
+	int ID;
+
+	public struct edges {
+		public Vertex emplace_back() {
+			// something here
+		}
+	};
+};
+
 //Seed random number generator
 std::mt19937 generator(system_clock::to_time_t(system_clock::now()));
 
@@ -41,6 +52,7 @@ public:
 	Graph(const double density, const double distance_range, 
 		const int numVert): numVertex(numVert), numEdges(0) {
 		
+		// https://goo.gl/hvgQhk
 		std::uniform_real_distribution<double> edge_exist(0, 1);
 		std::uniform_real_distribution<double> edge_len(1, distance_range);
 		
@@ -91,3 +103,7 @@ public:
 	typedef std::pair<double, Vertex&> PIRV;
 	
 };
+
+
+// http://www.sanfoundry.com/cpp-program-implement-adjacency-list/
+// https://ece.uwaterloo.ca/~cmoreno/ece250/2012-03-26--graphs-implementation.pdf
