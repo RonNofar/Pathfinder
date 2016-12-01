@@ -8,16 +8,20 @@
 
 using std::chrono::system_clock;
 
-class Vertex { // to be taken out
-	float distance;
-	int ID;
+#include <list> //std::list
+#include <utility> //std::pair
 
-	public struct edges {
-		public Vertex emplace_back() {
-			// something here
-		}
-	};
-};
+typedef struct vert {
+
+	//List of edges connected to current vertex
+	std::list<std::pair<double, vert&> > edges;
+
+	//Smallest distance from source to this node
+	double distance;
+	
+        //unique id to use for indexing this vertex
+	int ID;
+} Vertex;
 
 //Seed random number generator
 std::mt19937 generator(system_clock::to_time_t(system_clock::now()));
@@ -43,7 +47,7 @@ class Graph {
 	
 	//Add an edge to a vertex
 	void addEdge(int v, int b, double len) 
-	{ graphVector[v].edges.emplace_back(len, graphVector[b]); }
+	{ graphVector[v].edges.emplace_back(len, graphVector[b]); } // https://goo.gl/JTXCjz
 	
 public:
 	//Constructors
