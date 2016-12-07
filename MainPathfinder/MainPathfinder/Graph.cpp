@@ -143,7 +143,7 @@ int main() {
 	}*/
 
 	std::ifstream readFile;
-	readFile.open("input.txt", std::ios_base::in);
+	readFile.open("input.txt", std::ios_base::in); // http://stackoverflow.com/questions/27501160/pass-a-reference-to-stdifstream-as-parameter
 	if (readFile.is_open()) {
 		Graph graph( dynamic_cast<std::istream &> (readFile)); // chris
 	}
