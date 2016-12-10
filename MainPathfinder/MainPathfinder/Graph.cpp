@@ -102,8 +102,9 @@ public:
 	*/
 	Graph(std::istream &iss) : numEdges(0) {
 		int i, j, cost, inc = 1, index = 0;
-		iss >> numVertex;
-		graphVector.resize(numVertex, Vertex{ std::list<PIRV>(), KMAX, 0 });
+		iss >> numVertex; // https://goo.gl/Sm62mC
+		//std::cout << numVertex << std::endl;
+		graphVector.resize(numVertex, Vertex{ std::list<PIRV>(), KMAX, 0 }); // https://goo.gl/tzNYaz
 
 		//Assign a number to each vertex for unique identification
 		for (auto &k : graphVector) k.ID = index++;
@@ -142,21 +143,28 @@ int main() {
 		fb.close();
 	}*/
 
+
+	/*
 	std::ifstream readFile;
 	readFile.open("input.txt", std::ios_base::in); // http://stackoverflow.com/questions/27501160/pass-a-reference-to-stdifstream-as-parameter
 	if (readFile.is_open()) {
-		Graph graph( dynamic_cast<std::istream &> (readFile)); // chris
+		Graph graph( dynamic_cast<std::istream &> (readFile) ); // chris
 	}
-	readFile.close();
+	readFile.close();*/
 	
+
+	std::ifstream readFile("input.txt");
+	Graph graph(dynamic_cast<std::istream &> (readFile)); // http://stackoverflow.com/questions/1655912/problem-passing-in-istream-argument-to-a-class-constructor
 
 	//Graph(&is);
 
 
-
+	return 0;
 }
 
 
 // http://www.sanfoundry.com/cpp-program-implement-adjacency-list/
 // https://ece.uwaterloo.ca/~cmoreno/ece250/2012-03-26--graphs-implementation.pdf
 // https://github.com/sftrabbit/CppSamples-Samples
+
+// We create a vector of Vertexes (graphVector) for each vertex
