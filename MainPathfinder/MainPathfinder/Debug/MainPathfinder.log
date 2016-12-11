@@ -1,5 +1,10 @@
-﻿  Graph.cpp
-c:\users\ronno\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(37): warning C4244: 'argument': conversion from '__time64_t' to 'unsigned int', possible loss of data
-c:\users\ronno\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(43): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  MainPathfinder.vcxproj -> C:\Users\ronno\Pathfinder\MainPathfinder\Debug\MainPathfinder.exe
-  MainPathfinder.vcxproj -> C:\Users\ronno\Pathfinder\MainPathfinder\Debug\MainPathfinder.pdb (Full PDB)
+﻿cl : Command line warning D9028: minimal rebuild failure, reverting to normal build
+  Graph.cpp
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\vertex.h(30): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(27): warning C4244: 'argument': conversion from '__time64_t' to 'unsigned int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(169): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(173): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(176): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(198): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  MainPathfinder.vcxproj -> C:\Users\ronno\Projects\Pathfinder\MainPathfinder\Debug\MainPathfinder.exe
+  MainPathfinder.vcxproj -> C:\Users\ronno\Projects\Pathfinder\MainPathfinder\Debug\MainPathfinder.pdb (Full PDB)
