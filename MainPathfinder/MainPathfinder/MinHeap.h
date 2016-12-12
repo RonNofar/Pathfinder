@@ -5,16 +5,16 @@
 // Structure to represent a min heap node
 struct MinHeapNode
 {
-	int  v; // vertex index
-	int dist;
+	int  v;		// vertex index
+	int dist;	// vertex dist[v]
 };
 
 // Structure to represent a min heap
 struct MinHeap
 {
-	int size;      // Number of heap nodes present currently
-	int capacity;  // Capacity of min heap
-	int *pos;     // This is needed for decreaseKey()
+	int size;		// Number of heap nodes present currently
+	int capacity;	// Capacity of min heap
+	int *pos;		// This is needed for decreaseKey()
 	struct MinHeapNode **array;
 };
 
@@ -49,15 +49,15 @@ void swapMinHeapNode(struct MinHeapNode** a, struct MinHeapNode** b)
 	*b = t;
 }
 
-// A standard function to heapify at given idx
+// A standard function to heapify at given index
 // This function also updates position of nodes when they are swapped.
 // Position is needed for decreaseKey()
-void minHeapify(struct MinHeap* minHeap, int idx)
+void minHeapify(struct MinHeap* minHeap, int index)
 {
 	int smallest, left, right;
-	smallest = idx;
-	left = 2 * idx + 1;
-	right = 2 * idx + 2;
+	smallest = index;
+	left = 2 * index + 1;
+	right = 2 * index + 2;
 
 	if (left < minHeap->size &&
 		minHeap->array[left]->dist < minHeap->array[smallest]->dist)
@@ -67,18 +67,18 @@ void minHeapify(struct MinHeap* minHeap, int idx)
 		minHeap->array[right]->dist < minHeap->array[smallest]->dist)
 		smallest = right;
 
-	if (smallest != idx)
+	if (smallest != index)
 	{
 		// The nodes to be swapped in min heap
 		MinHeapNode *smallestNode = minHeap->array[smallest];
-		MinHeapNode *idxNode = minHeap->array[idx];
+		MinHeapNode *idxNode = minHeap->array[index];
 
 		// Swap positions
-		minHeap->pos[smallestNode->v] = idx;
+		minHeap->pos[smallestNode->v] = index;
 		minHeap->pos[idxNode->v] = smallest;
 
 		// Swap nodes
-		swapMinHeapNode(&minHeap->array[smallest], &minHeap->array[idx]);
+		swapMinHeapNode(&minHeap->array[smallest], &minHeap->array[index]);
 
 		minHeapify(minHeap, smallest);
 	}

@@ -18,12 +18,21 @@
     <ClCompile Include="Graph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vertex.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="MinHeap.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
