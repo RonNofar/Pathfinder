@@ -4,17 +4,17 @@
 
 struct Vertex {
 
-	//List of edges connected to current vertex
+	// List of edges connected to current vertex
 	std::list<std::pair<double, Vertex&> > edges;
 
-	//Smallest distance from source to this node
+	// Smallest distance from source to this node
 	double distance;
 
-	//unique id to use for indexing this vertex
+	// unique id to use for indexing this vertex
 	int ID;
 };
 
-//Used for priority queue sorting
+// Used for priority queue sorting
 template<bool reverse>
 struct vertexSort {
 	inline bool operator () (Vertex *lhs, Vertex *rhs) const
@@ -23,7 +23,7 @@ struct vertexSort {
 	}
 };
 
-//Sorting helpers for a vertex object
+// Sorting helpers for a vertex object
 struct vertexComp {
 	inline int operator () (const Vertex& lhs, const Vertex& rhs) const
 	{

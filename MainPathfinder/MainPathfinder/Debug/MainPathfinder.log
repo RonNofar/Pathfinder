@@ -1,2 +1,15 @@
-﻿  MainPathfinder.vcxproj -> C:\Users\ronno\Projects\Pathfinder\MainPathfinder\Debug\MainPathfinder.exe
+﻿  Graph.cpp
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\vertex.h(30): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(13): warning C4244: 'argument': conversion from '__time64_t' to 'unsigned int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(92): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(95): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\graph.cpp(112): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  Main.cpp
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\vertex.h(30): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\ronno\projects\pathfinder\mainpathfinder\mainpathfinder\tools.h(20): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Generating Code...
+  MainPathfinder.vcxproj -> C:\Users\ronno\Projects\Pathfinder\MainPathfinder\Debug\MainPathfinder.exe
   MainPathfinder.vcxproj -> C:\Users\ronno\Projects\Pathfinder\MainPathfinder\Debug\MainPathfinder.pdb (Full PDB)

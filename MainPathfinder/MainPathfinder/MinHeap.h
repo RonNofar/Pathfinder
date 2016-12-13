@@ -5,14 +5,14 @@
 // Structure to represent a min heap node
 struct MinHeapNode
 {
-	int  v;		// vertex index
+	int v;		// vertex index
 	int dist;	// vertex dist[v]
 };
 
 // Structure to represent a min heap
 struct MinHeap
 {
-	int size;		// Number of heap nodes present currently
+	int size;		// Number of total current heap nodes 
 	int capacity;	// Capacity of min heap
 	int *pos;		// This is needed for decreaseKey()
 	struct MinHeapNode **array;
